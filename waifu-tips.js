@@ -54,7 +54,7 @@ function loadWidget(waifuPath, apiPath) {
 			});
 		});
 		var re = /x/;
-		console.log(re);
+		// console.log(re);
 		re.toString = () => {
 			showMessage("哈哈，你打开了控制台，是想要看看我的小秘密吗？", 6000, 9);
 			return "";
@@ -153,7 +153,8 @@ function loadWidget(waifuPath, apiPath) {
 			var modelId = 1, //模型 ID
 				modelTexturesId = 53; //材质 ID
 		}
-		loadModel(modelId, modelTexturesId);
+		loadModel(11, 0);
+		// loadModel(modelId, modelTexturesId);
 		$.getJSON(waifuPath, function(result) {
 			$.each(result.mouseover, function(index, tips) {
 				$(document).on("mouseover", tips.selector, function() {
